@@ -16,7 +16,7 @@
         <% end %>
       </div>
       <div class="guest-user">
-        <%= link_to("#", method: :post, class: 'sign_in-btn') do %>
+        <%= link_to(menus_guest_sign_in_path, method: :post, class: 'sign_in-btn') do %>
           <%= image_tag 'user.png', size: '80x80', class: "guest-user-btn-icon" %>
         <% end %>
       </div>
@@ -53,57 +53,6 @@
     </div>
     <div class="btn-log-out">
       log-out
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-  <div class="three-btn">
-    <div class="cook">
-      <% if user_signed_in? %>
-        <%= link_to(dinners_path, class: 'cook-btn') do %>
-          <%= image_tag 'cook.png' , size: '100x100' ,class: "cook-btn-icon" %>
-        <% end %>
-      <% else %>
-        <%= link_to(new_user_session_path, class: 'cook-btn') do %>
-          <%= image_tag 'cook.png' , size: '100x100' ,class: "cook-btn-icon" %>
-        <% end %>
-      <% end %>
-    </div>
-
-    <div class="recipe">
-      <% if user_signed_in? %>
-        <%= link_to(new_dinner_path, class: 'recipe-btn') do %>
-          <%= image_tag 'eat.png', size: '110x110', class: "recipe-btn-icon" %>
-        <% end %>
-      <% else %>
-        <%= link_to(new_user_session_path, class: 'recipe-btn') do %>
-          <%= image_tag 'eat.png', size: '110x110', class: "recipe-btn-icon" %>
-        <% end %>
-      <% end%>
-    </div>
-    
-    <div class="menus">
-      <% if user_signed_in? %>
-        <%= link_to(new_menu_path, class: 'menus-btn') do %>
-          <%= image_tag 'menus.png', size: '100x100', class: "menus-btn-icon" %>
-        <% end %>
-      <% else %>
-        <%= link_to(new_user_session_path, class: 'menus-btn') do %>
-          <%= image_tag 'menus.png', size: '100x100', class: "menus-btn-icon" %>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-  <div class="btn-message">
-    <div class="message-cook">
-      cook
-    </div>
-    <div class="message-record">
-      record
-    </div>
-    <div class="message-recipe">
-      recipe
     </div>
   </div>
 </div>

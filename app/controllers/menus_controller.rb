@@ -1,5 +1,18 @@
 class MenusController < ApplicationController
-end
 
-def index
+
+  def index
+  end
+
+  def new_guest
+    user = User.find_or_create_by(email: 'guest@example.com') do |user|
+      user.password = SecureRandom.urlsafe_base64
+    end
+    if sign_in user
+      redirect_to root_path, notice: 'Signed in successfully'
+    else
+      redirect_to root_path, notice: 'ダメでした'
+    end
+  end
+
 end
