@@ -1,0 +1,59 @@
+<div class="header">
+  <div class="header-main">
+    <div class="D.maker">
+      <%= link_to(root_path, class: 'D.maker-btn') do %>
+        <%= image_tag 'logo1.png', size: '200x120', class: "D.maker-btn-icon" %>
+      <% end %>
+    </div>
+
+    <div class="button">
+      <div class="log-message">
+      current status
+        <% if flash[:notice] %>
+          <div class="notice">
+            <%= flash[:notice] %>
+          </div>
+        <% end %>
+      </div>
+      <div class="guest-user">
+        <%= link_to(menus_guest_sign_in_path, method: :post, class: 'sign_in-btn') do %>
+          <%= image_tag 'user.png', size: '80x80', class: "guest-user-btn-icon" %>
+        <% end %>
+      </div>
+
+      <div class="registration">
+        <%= link_to(new_user_registration_path, class: 'sign_in-btn') do %>
+          <%= image_tag 'new.png', size: '80x80', class: "registration-btn-icon" %>
+        <% end %>
+      </div>
+
+      <div class="login">
+        <%= link_to(new_user_session_path, class: 'sign_in-btn') do %>
+          <%= image_tag 'login.png', size: '80x80', class: "sign_in-btn-icon" %>
+        <% end %>
+      </div>
+
+      <div class="logout">
+        <%= link_to(destroy_user_session_path, method: :delete, class: 'logout-btn') do %>
+          <%= image_tag 'logout.png', size: '80x80', class: "logout-btn-icon" %>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+  <div class="btn-name">
+    <div class="btn-guest">
+      guest
+    </div>
+    <div class="btn-sign-up">
+      sign-up
+    </div>
+    <div class="btn-log-in">
+      log-in 
+    </div>
+    <div class="btn-log-out">
+      log-out
+    </div>
+  </div>
+</div>
+

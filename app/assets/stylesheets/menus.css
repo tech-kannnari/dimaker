@@ -1,0 +1,520 @@
+/* index.html.erb */
+
+.header{
+  height: 100px;
+  background-color: #ffffff;
+  
+}
+.Dmaker{
+  height: 100px;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button{
+  display: flex;
+}
+.log-message{
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  height: 40px;
+  width: 430px;
+  text-align: center;
+}
+.guest-user{
+  margin: 20px
+}
+.registration {
+  margin: 20px;
+}
+
+.login{
+  margin: 20px;
+}
+.logout{
+  margin: 20px;
+}
+
+.btn-name {
+  display: flex;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-guest {
+  margin-left: 995px;
+}
+.btn-sign-up {
+  margin-left: 58px;
+}
+.btn-log-in {
+  margin-left: 63px;
+}
+.btn-log-out {
+  margin-left: 42px;
+}
+.main{
+  margin-top: 8vh;
+  height: 56vh;
+  background-color: #f1e5be;
+}
+
+.swiper-container {
+  width: 470px;
+  height: 370px;
+  border: 10px double rgb(177, 168, 151);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.footer{
+  height: 20vh;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+
+.three-btn {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin-left: 265px;
+}
+.menus-btn {
+  margin-left: 90px;
+}
+.btn-message {
+  text-align: center;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+.message-cook {
+  margin-left: 290px;
+}
+.message-record {
+  margin-left: 352px;
+}
+.message-recipe {
+  margin-left: 337px;
+}
+
+
+/* new.html.erb */
+
+.menus-add-contents {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.menus-add-title {
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+.menus-add-main{
+  text-align: center;
+  margin: 2vh;
+}
+
+.weight-bold-text {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 2vh;
+  width: 901px
+}
+
+.form-text::placeholder{
+  font-weight: bold;
+}
+.form-text {
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  margin-top: 2vh;
+  width: 830px;
+}
+
+.main-genre{
+  margin-bottom: 12vh;
+}
+.salad-genre{
+  margin-bottom: 12vh;
+}
+.soup-genre{
+  margin-bottom: 8vh;
+}
+
+.add-btn-contents {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-comment{
+  margin: 20px;
+  
+}
+
+.add-btn{
+  width: 80px;
+  height: 80px;
+  margin-right: 100px;
+
+}
+
+.btn-comment{
+  display: flex;
+}
+
+.add-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 307px;
+}
+.stop-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 118px;
+}
+
+/* dinners index */
+
+.cook-add-contents {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.cook-header {
+  height: 90px;
+  width: 90px;
+
+}
+.cook-btn-contents {
+  width: 100%;
+  text-align: center;
+}
+
+
+.cook-btn{
+  width: 80px;
+  height: 80px;
+  margin-right: 100px;
+
+}
+
+.cook-btn-comment{
+  display: flex;
+}
+
+.cook-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 279px;
+}
+.cook-stop-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 108px;
+}
+
+.cook-main{
+  text-align: center;
+  margin: 2vh;
+}
+
+.today-dinner {
+  width: 863px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.today-dinner span {
+  font-size: 30px;
+}
+.cook-recipe {
+  width: 863px;
+  font-size: 20px;
+  
+}
+
+.f-name {
+  padding: 16px 16px 8px;
+  font-size: 16px;
+  margin-top: 2vh;
+
+}
+
+.f-recipe {
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  margin-top: 2vh;
+  background-color: #ffffff;
+}
+
+.cook-impression {
+  width:863px;
+  margin-bottom: 2vh;
+}
+
+.cook-image {
+  width:863px;
+}
+
+.cook-weight-bold-text {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 2vh;
+  width: 863px
+}
+
+.form-date{
+  margin-bottom: 4vh;
+}
+
+.cook-content {
+  margin-top: 6vh;
+}
+.cook-add-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+/* dinners new */
+
+.record-contents {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  
+}
+
+.record-main {  
+  width: 870px;
+  text-align :center;
+}
+
+.record-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+ .record-sentence {
+   font-size: 26px;
+   margin-bottom: 2vh; 
+ }
+
+ .record-list{
+   width: 660px;
+   border: 8px dotted #ccc;
+   border-radius: 4px;
+   padding: 1em ;
+   margin-bottom: 4vh;
+   margin-left: 105px;
+ }
+ .record-date{
+   margin-top: 2vh;
+ }
+ .record-footer{
+  width: 680px;
+  background-color: #f1e5be;
+  text-align: center;
+
+}
+
+.record-date{
+  font-size: 24px;
+}
+
+.back-btn{
+  margin-top: 3vh;
+}
+
+.else-message{
+  font-size: 32px;
+  height: 50vh;
+  margin-top: 10vh
+}
+.else-message span{
+  color: red;
+}
+/* show.html.erb */
+
+.show-content {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+
+}
+
+.show-header {
+  margin-top: 2vh;
+}
+
+.show-main {
+  text-align: center;
+  font-size: 24px;
+  
+}
+
+.show-date {
+  margin: 2vh;
+}
+
+.impression-sentence {
+  margin: 2vh;
+  margin-bottom: 2vh;
+}
+
+.show-impression {
+  font-size: 17px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  max-width: 870px;
+}
+
+.back-message {
+  margin-bottom: 8vh;
+  font-size: 16px;
+}
+
+/* registrations new */
+
+.sign-up-main{
+  background-color: #f1e5be;
+}
+
+.registration-header {
+  padding: 2vh 0 ;
+  margin-bottom: 2vh;
+}
+
+.sign-up-main{
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.field {
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+.sign-form {
+  font-weight: normal;
+  width: 50vh;
+  padding: 8px;
+  font-size: 17px;
+}
+.actions {
+  margin-top: 4vh;
+}
+.sign-btn-comment{
+  display: flex;
+}
+.sign-up-comment {
+  margin-left: 580px;
+}
+.sign-stop-comment {
+  margin-left: 120px;
+}
+
+.log-in-btn-comment {
+  margin-left: 18px;
+}
+.log-in-btn {
+  height: 140px;
+}
+
+/* sessions new */
+
+.session-main{
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  min-height: 100vh;
+}
+.session-header {
+  padding: 2vh 0 ;
+  margin-bottom: 6vh;
+}
+
+.log-btn-comment{
+  display: flex;
+}
+.log-in-comment {
+  margin-left: 593px;
+}
+.log-stop-comment {
+  margin-left: 126px;
+  margin-bottom: 4vh;
+}
+
+.sign-up-btn-comment {
+  margin-left: 1px;
+}
+.session-actions {
+  margin-top: 10vh;
+}
+
+.submit {
+  background-color: #f1e5be;
+  
+}
+
+.no-record-message {
+  margin-top: 14vh;
+  margin-bottom: 14vh;
+  font-size: 30px;
+}
+
+.no-record-message span {
+  color: red;
+}

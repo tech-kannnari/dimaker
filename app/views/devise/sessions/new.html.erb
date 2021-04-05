@@ -1,0 +1,48 @@
+<div class="session-main">
+  <div class="session-header">
+      <%= link_to(root_path, class: 'session-btn') do %>
+        <%= image_tag 'login.png' , size: '80x80' ,class: "session-btn-icon" %>
+      <% end%>
+  </div>
+  <div class="session-form">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "sign-form" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "current-password", class: "sign-form" %>
+      </div>
+
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+  </div>
+
+      <div class="session-actions">
+          <%= image_submit_tag "add.png", size: '65x65', class: "cook-btn" %>
+            <%= link_to(root_path, class: 'stop-btn') do %>
+          <%= image_tag 'stop.png', size: '68x68', class: "stop-btn-icon" %>
+          <% end %>
+          <div class="log-btn-comment">
+            <div class="log-in-comment">log-in</div>
+            <div class="log-stop-comment">quit</div>
+          </div>
+      </div>
+    <div class="sign-up-btn">
+      <%= link_to(new_user_registration_path, class: 'stop-btn') do %>
+          <%= image_tag 'new.png', size: '75x75', class: "stop-btn-icon" %>
+          <% end %>
+      <div class="sign-up-btn-comment">
+          sign-up
+      </div>
+    </div>  
+   <% end %>
+   <%# <%= render "devise/shared/links" %>  
+
+</div>

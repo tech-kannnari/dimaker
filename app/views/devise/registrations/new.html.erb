@@ -1,0 +1,56 @@
+<div class="sign-up-main">
+  <div class="registration-header">
+      <%= link_to(root_path, class: 'registration-btn') do %>
+        <%= image_tag 'new.png' , size: '80x80' ,class: "registration-btn-icon" %>
+      <% end%>
+  </div>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+        <%= f.label :nickname %> <em>(6 characters maximum)</em><br>
+        <%= f.text_field :nickname, autofocus: true, class:"sign-form" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"sign-form" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", class:"sign-form" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"sign-form" %>
+    </div>
+
+      <div class="actions">
+          <%= image_submit_tag "add.png", size: '65x65', class: "cook-btn" %>
+            <%= link_to(root_path, class: 'stop-btn') do %>
+          <%= image_tag 'stop.png', size: '68x68', class: "stop-btn-icon" %>
+          <% end %>
+          <div class="sign-btn-comment">
+            <div class="sign-up-comment">sign-up</div>
+            <div class="sign-stop-comment">quit </div>
+          </div>
+      </div>
+    <div class="log-in-btn">
+      <%= link_to(new_user_session_path, class: 'stop-btn') do %>
+          <%= image_tag 'login.png', size: '75x75', class: "stop-btn-icon" %>
+          <% end %>
+      <div class="log-in-btn-comment">
+          log-in
+      </div>
+    </div>
+  </div>
+    <% end %>
+
+  <%# <%= render "devise/shared/links" %> 
+</div>
