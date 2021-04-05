@@ -34,7 +34,8 @@ class MenusController < ApplicationController
   private
 
   def menu_params
-    params.require(:menu).permit(:main_name, :main_recipe, :main_genre, :salad_name, :salad_recipe, :salad_genre, :soup_name, :soup_recipe, :soup_genre)
+    params.require(:menu).permit(:main_name, :main_recipe, :main_genre, :salad_name, :salad_recipe, :salad_genre, :soup_name, :soup_recipe, :soup_genre).merge(user_id: current_user.id)
+
   end
 
 end
