@@ -10,6 +10,7 @@ class DinnersController < ApplicationController
   end
 
   def create
+    @random = Menu.order("RAND()").limit(1)
     @dinner = Dinner.new(dinner_params)
     if @dinner.save
       redirect_to root_path
