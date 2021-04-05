@@ -61,7 +61,7 @@
   <div class="three-btn">
     <div class="cook">
       <% if user_signed_in? %>
-        <%= link_to("#", class: 'cook-btn') do %>
+        <%= link_to(new_dinner_path, class: 'cook-btn') do %>
           <%= image_tag 'cook.png' , size: '100x100' ,class: "cook-btn-icon" %>
         <% end %>
       <% else %>

@@ -1,0 +1,98 @@
+  <div class="cook-add-contents">
+    <div class="cook-header">
+      <%= link_to(new_dinner_path, class: 'cook-btn') do %>
+        <%= image_tag 'cook.png' , size: '90x90' ,class: "cook-btn-icon" %>
+      <% end%>
+    </div>
+
+    <div class="cook-main">
+    <% if Menu.exists? %>
+      <div class="cook-recipe">Today's dinner!!
+      <% @random.each do |menu| %>
+        <div class="today-dinner">
+          <span><%= menu.main_name %></span>＋
+          <span><%= menu.salad_name %></span>＋
+          <span><%= menu.soup_name %></span>
+        </div>
+        <div class="f-name">
+          〜<%= menu.main_name %>の作り方〜
+        </div>
+        <div class="f-recipe">
+          <%= menu.main_recipe %>
+        </div>
+
+        <div class="f-name">
+          〜<%= menu.salad_name %>の作り方〜
+        </div>
+        <div class="f-recipe">
+          <%= menu.salad_recipe %>
+        </div>
+        <div class="f-name">
+          〜<%= menu.soup_name %>の作り方〜
+        </div>
+        <div class="f-recipe">
+          <%= menu.soup_recipe %>
+        </div>
+      <% end %>
+      </div>
+      
+      <div class="cook-content">
+
+          <h2 class="cook-add-title">Let's record the dinner !!</h2>
+
+        <%= form_with model: @dinner, local: true do |f| %>
+
+            <div class="cook-image">
+              <div class="cook-weight-bold-text">
+                Cooking photo
+              </div>
+              <%= f.file_field :image, id:"cook-image" %>
+            </div>
+
+          <div class="cook-impression">
+            <div class="cook-weight-bold-text">
+              Impressions of cooking 
+            </div>
+            <%= f.text_area :impression, class:"form-text", id:"cook-info", placeholder:"感想", size:"90x10" %> 
+          </div> 
+          
+          <div class="cook-date">
+            <div class="cook-weight-bold-text">
+              Select to date
+            </div>
+            <%= f.date_field :cookday, class: 'form-date', type: 'date'%>
+          </div>
+
+          <div class="cook-btn-contents">
+              <%= image_submit_tag "add.png", size: '80x80', class: "cook-btn" %>
+            <%= link_to(root_path, class: 'stop-btn') do %>
+              <%= image_tag 'stop.png', size: '75x75', class: "stop-btn-icon" %>
+            <% end %>
+          </div>
+
+          <div class="cook-btn-comment">
+            <div class="cook-comment">record to dinner</div>
+            <div class="cook-stop-comment">quit </div>
+          </div>
+        <% end %>
+      </div>
+      <% else %>
+        <div class="else-message">
+          まずはレシピを<span>追加</span>してみよう！！
+        </div>
+        <div class="show-footer">
+          <div class="back-btn">
+            <%= link_to(root_path, class: 'recipe-btn') do %>
+              <%= image_tag 'back.png', size: '80x80', class: "recipe-btn-icon" %>
+            <% end %>
+          </div>
+          <div class="back-message">
+            Back to previous
+          </div>
+      </div>
+      <% end %>
+    </div>
+
+    <div class="cook-footer">
+    </div>
+ </div>
