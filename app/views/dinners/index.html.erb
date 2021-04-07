@@ -1,0 +1,50 @@
+ <div class="record-contents">
+    <div class="record-header">
+      <%= link_to(root_path, class: 'record-btn') do %>
+        <%= image_tag 'eat.png' , size: '110x110' ,class: "record-btn-icon" %>
+      <% end%>
+    </div>
+
+    <div class="record-main"> 
+      <div class="record-sentence">
+      今までの料理一覧 ~List of past dishes~
+      </div>
+      <div class="record-lists">
+      <% if Dinner.exists?%>
+        <% @dinner.each do |record|%>
+          <div class="record-list">
+            <div class="record-images">
+              <%= link_to image_tag(record.image, class: :card_img, size: '400x400'), "#" %>
+            </div>
+            <div class="record-date">
+           Date of cooking 【
+              <%= record.cookday %> 】
+            </div>
+          </div>
+        <% end %>
+        <% else %>
+        <div class="no-record">
+          <div class="no-record-message">
+          <span>No record</span> of cooking yet.
+          </div>
+          <div class="no-record-message">
+          Let's <span>make</span> the dinner !!
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="record-footer">
+
+      <div class="back-btn">
+          <%= link_to(root_path, class: 'recipe-btn') do %>
+            <%= image_tag 'back.png', size: '80x80', class: "recipe-btn-icon" %>
+          <% end %>
+      </div>
+      <div class="back-message">
+        Back to previous
+      </div>
+
+    </div>
+ </div>

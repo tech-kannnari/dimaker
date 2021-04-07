@@ -73,7 +73,7 @@
 
     <div class="recipe">
       <% if user_signed_in? %>
-        <%= link_to("#", class: 'recipe-btn') do %>
+        <%= link_to(dinners_path, class: 'recipe-btn') do %>
           <%= image_tag 'eat.png', size: '110x110', class: "recipe-btn-icon" %>
         <% end %>
       <% else %>
