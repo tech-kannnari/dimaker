@@ -4,7 +4,7 @@ class MenusController < ApplicationController
 
 
   def index
-    # @dinner = Dinner.all.order("RAND()").limit(6)
+    @dinner = Dinner.all.order("RAND()").limit(6)
   end
   
   def new
