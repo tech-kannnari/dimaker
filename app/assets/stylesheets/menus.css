@@ -45,8 +45,11 @@
   font-size: 20px;
   font-weight: bold;
 }
+.users-image {
+  margin-left: 588px;
+}
 .btn-guest {
-  margin-left: 995px;
+  margin-left: 127px;
 }
 .btn-sign-up {
   margin-left: 58px;
