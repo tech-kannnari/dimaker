@@ -1,0 +1,50 @@
+
+<div class="show-content">
+  <div class="show-header">
+     <%= link_to(root_path, class: 'home-btn') do %>
+        <%= image_tag 'home.png' , size: '90x90' ,class: "home-btn-icon" %>
+      <% end%>
+  </div>
+  <div class="show-main">
+    
+    <div class="show-date">
+      <%= @dinner.cookday %>
+    </div>
+    <div class="show-image">
+      <%= image_tag @dinner.image, class: "card_img", size: '400x400' %>
+    </div>
+    <div class="impression-sentence">
+      〜Impressions of cooking〜
+    </div>
+    <div class="show-impression">
+      <%= @dinner.impression %>
+    </div>
+
+    <div class="show--main-name">
+      <%= %>
+    </div>
+    <div class="show-main-recipe">
+      <%= %>
+    <div class="show-salad-name">
+      <%= %>
+    </div>
+    <div class="show-salad-recipe">
+      <%= %>
+    <div class="show-soup--name">
+      <%= %>
+    </div>
+    <div class="show-soup-recipe">
+     <%= %>
+    </div>
+  </div>
+  <div class="show-footer">
+      <div class="back-btn">
+          <%= link_to(new_dinner_path, class: 'recipe-btn') do %>
+            <%= image_tag 'back.png', size: '80x80', class: "recipe-btn-icon" %>
+          <% end %>
+      </div>
+      <div class="back-message">
+        Back to previous
+      </div>
+  </div>
+</div>
