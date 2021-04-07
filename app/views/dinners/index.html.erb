@@ -14,7 +14,7 @@
         <% @dinner.each do |record|%>
           <div class="record-list">
             <div class="record-images">
-              <%= link_to image_tag(record.image, class: :card_img, size: '400x400'), "#" %>
+              <%= link_to image_tag(record.image, class: :card_img, size: '400x400'), dinner_path(record.id) %>
             </div>
             <div class="record-date">
            Date of cooking 【
