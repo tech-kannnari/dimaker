@@ -10,6 +10,9 @@
     <div class="show-date">
       <%= @dinner.cookday %>
     </div>
+    <div class="show-nickname">
+     ~ Chef's Name ~ <br> <%= @dinner.user.nickname %> 
+    </div>
     <div class="show-image">
       <%= image_tag @dinner.image, class: "card_img", size: '400x400' %>
     </div>
@@ -20,7 +23,7 @@
       <%= @dinner.impression %>
     </div>
 
-    <div class="show--main-name">
+    <div class="show-main-name">
       <%= %>
     </div>
     <div class="show-main-recipe">
@@ -39,7 +42,7 @@
   </div>
   <div class="show-footer">
       <div class="back-btn">
-          <%= link_to(new_dinner_path, class: 'recipe-btn') do %>
+          <%= link_to(dinners_path, class: 'recipe-btn') do %>
             <%= image_tag 'back.png', size: '80x80', class: "recipe-btn-icon" %>
           <% end %>
       </div>
