@@ -19,6 +19,10 @@ class DinnersController < ApplicationController
     end
   end
 
+  def show
+    @dinner = Dinner.find(params[:id])
+  end
+  
   private
 
   def dinner_params
