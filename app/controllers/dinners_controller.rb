@@ -1,5 +1,7 @@
 class DinnersController < ApplicationController
   
+  before_action :authenticate_user!, only: [:index,:new, :create, :show]
+
   def index
     @dinner = Dinner.all.order('created_at DESC')
   end
