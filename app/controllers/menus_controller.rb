@@ -16,18 +16,18 @@ class MenusController < ApplicationController
     if @menu.save
       redirect_to root_path
     else
+      flash.now[:notice] = '料理名が空では登録できません'
       render:new
     end
   end
 
   def new_guest
-    user = User.find_or_create_by(email: 'guest@example.com') do |user|
+    user = User.find_or_create_by!(email: 'guest@example.com') do |user|
       user.password = SecureRandom.urlsafe_base64
+      user.nickname = "ゲスト"
     end
     if sign_in user
       redirect_to root_path, notice: 'Signed in successfully'
-    else
-      redirect_to root_path, notice: 'ダメでした'
     end
   end
 

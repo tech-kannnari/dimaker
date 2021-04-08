@@ -6,6 +6,9 @@
     </div>
 
     <div class="cook-main">
+    <div class='login-flash-message'>
+      <%= flash[:notice] %>
+    </div>
     <% if Menu.exists? %>
       <div class="cook-recipe">Today's dinner!!
       <% @random.each do |menu| %>
