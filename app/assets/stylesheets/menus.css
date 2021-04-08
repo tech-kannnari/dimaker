@@ -22,8 +22,12 @@
   font-weight: bold;
   padding: 20px;
   height: 40px;
-  width: 430px;
+  width: 440px;
   text-align: center;
+}
+.notice {
+  margin-top: 10px;
+  font-size: 25px;
 }
 .guest-user{
   margin: 20px
@@ -46,10 +50,10 @@
   font-weight: bold;
 }
 .users-image {
-  margin-left: 588px;
+  margin-left: 558px;
 }
 .btn-guest {
-  margin-left: 127px;
+  margin-left: 108px;
 }
 .btn-sign-up {
   margin-left: 58px;
@@ -473,6 +477,10 @@
   height: 140px;
 }
 
+.e-massage  {
+  list-style: none;
+  color: red;
+}
 /* sessions new */
 
 .session-main{
@@ -482,7 +490,7 @@
   font-weight: bold;
   text-align: center;
   margin: auto;
-  min-height: 100vh;
+  min-height: 105vh;
 }
 .session-header {
   padding: 2vh 0 ;
@@ -502,9 +510,17 @@
 
 .sign-up-btn-comment {
   margin-left: 1px;
+  margin-bottom: 20px;
 }
 .session-actions {
   margin-top: 10vh;
+}
+
+.login-flash-message {
+  margin-bottom: 20px;
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .submit {
@@ -521,3 +537,4 @@
 .no-record-message span {
   color: red;
 }
+
