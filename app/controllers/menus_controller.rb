@@ -16,6 +16,7 @@ class MenusController < ApplicationController
     if @menu.save
       redirect_to root_path
     else
+      flash.now[:notice] = '料理名が空では登録できません'
       render:new
     end
   end

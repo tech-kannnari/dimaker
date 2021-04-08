@@ -2,9 +2,12 @@
   <div class="session-header">
       <%= link_to(root_path, class: 'session-btn') do %>
         <%= image_tag 'login.png' , size: '80x80' ,class: "session-btn-icon" %>
-      <% end%>
+      <% end %>
   </div>
   <div class="session-form">
+    <div class='login-flash-message'>
+      <%= flash[:notice] %>
+    </div>
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <%= f.label :email %><br />

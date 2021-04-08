@@ -17,6 +17,7 @@ class DinnersController < ApplicationController
     if @dinner.save
       redirect_to root_path
     else
+      flash.now[:notice] = '空の項目があると登録できません'
       render :new
     end
   end
