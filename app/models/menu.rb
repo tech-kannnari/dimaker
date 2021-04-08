@@ -5,5 +5,5 @@ class Menu < ApplicationRecord
     validates :main_name
     validates :salad_name
     validates :soup_name
-  end    
+  end
 end

@@ -23,9 +23,9 @@ RSpec.describe Dinner, type: :model do
         expect(@dinner.errors.full_messages).to include("Impression can't be blank")
       end
       it 'cookdayが存在しない時登録できない' do
-          @dinner.cookday = nil
-          @dinner.valid?
-          expect(@dinner.errors.full_messages).to include("Cookday can't be blank")
+        @dinner.cookday = nil
+        @dinner.valid?
+        expect(@dinner.errors.full_messages).to include("Cookday can't be blank")
       end
     end
   end

@@ -5,7 +5,6 @@ RSpec.describe Menu, type: :model do
     @menu = FactoryBot.build(:menu)
   end
 
-
   describe '新規レシピ登録' do
     context '新規レシピ登録できるとき' do
       it 'main_name,salad_name, soup_nameが存在すれば登録できる' do

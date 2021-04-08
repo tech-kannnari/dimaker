@@ -1,18 +1,17 @@
 class DinnersController < ApplicationController
-  
-  before_action :authenticate_user!, only: [:index,:new, :create, :show]
+  before_action :authenticate_user!, only: [:index, :new, :create, :show]
 
   def index
     @dinner = Dinner.all.order('created_at DESC')
   end
-  
+
   def new
-    @random = Menu.order("RAND()").limit(1)
+    @random = Menu.order('RAND()').limit(1)
     @dinner = Dinner.new
   end
 
   def create
-    @random = Menu.order("RAND()").limit(1)
+    @random = Menu.order('RAND()').limit(1)
     @dinner = Dinner.new(dinner_params)
     if @dinner.save
       redirect_to root_path
@@ -25,7 +24,7 @@ class DinnersController < ApplicationController
   def show
     @dinner = Dinner.find(params[:id])
   end
-  
+
   private
 
   def dinner_params

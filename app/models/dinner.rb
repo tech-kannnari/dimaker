@@ -6,5 +6,5 @@ class Dinner < ApplicationRecord
     validates :impression
     validates :image
     validates :cookday
-  end    
+  end
 end

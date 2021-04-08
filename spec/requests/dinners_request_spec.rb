@@ -1,5 +1,4 @@
 require 'rails_helper'
 
-RSpec.describe "Dinners", type: :request do
-
+RSpec.describe 'Dinners', type: :request do
 end
