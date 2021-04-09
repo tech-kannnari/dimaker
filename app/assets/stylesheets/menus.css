@@ -382,6 +382,10 @@
 .else-message span{
   color: red;
 }
+.back-message {
+  margin-bottom: 8vh;
+  font-size: 16px;
+}
 /* show.html.erb */
 
 .show-content {
@@ -405,6 +409,9 @@
   
 }
 
+.show-footer{
+  text-align: center;
+}
 .show-date {
   margin: 2vh;
 }
@@ -421,7 +428,7 @@
   max-width: 870px;
 }
 
-.back-message {
+.back-message-show {
   margin-bottom: 8vh;
   font-size: 16px;
 }
