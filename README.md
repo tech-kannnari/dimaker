@@ -28,8 +28,7 @@ Basic認証
 [![Image from Gyazo](https://i.gyazo.com/b20fd6ab5a317540a07d3d5436f5f68b.gif)](https://gyazo.com/b20fd6ab5a317540a07d3d5436f5f68b)
 # 工夫したポイント
 ・全体の雰囲気を統一し、見やすいレイアウトを心がけました  
-・アイコンにリンクをつけることで画面遷移をわかりやすくしました  
-
+・アイコンにリンクをつけることで画面遷移をわかりやすくしました  
 # 開発環境
 Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code  
 
