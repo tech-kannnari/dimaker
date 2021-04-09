@@ -22,11 +22,8 @@ Basic認証
 # DEMO
 トップ画面
 [![Image from Gyazo](https://i.gyazo.com/1fcf48cd9f42b1ae464ede81b47868ed.gif)](https://gyazo.com/1fcf48cd9f42b1ae464ede81b47868ed)
-
 献立表示画面
 [![Image from Gyazo](https://i.gyazo.com/7e183e2ef282d6ab8437167cf1af0d1a.gif)](https://gyazo.com/7e183e2ef282d6ab8437167cf1af0d1a)
-調理履歴の一覧画面
-[![Image from Gyazo](https://i.gyazo.com/2e0ea8aae57dfdb2b139dc7b4ada49bb.gif)](https://gyazo.com/2e0ea8aae57dfdb2b139dc7b4ada49bb)
 履歴の詳細
 [![Image from Gyazo](https://i.gyazo.com/b20fd6ab5a317540a07d3d5436f5f68b.gif)](https://gyazo.com/b20fd6ab5a317540a07d3d5436f5f68b)
 # 工夫したポイント
